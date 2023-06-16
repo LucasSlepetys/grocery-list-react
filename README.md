@@ -1,3 +1,11 @@
+## ToDo:
+
+- Refactor code and make it cleaner by removing variables that aren't necessary and making functions better
+- Add comments to each component saying what each prop and variable does and why it is in there
+- Add comments to algorithms and function explaining what they do and how they do it
+
+### + Add My Own CSS 
+
 ## Figma URL
 
 [Grocery Bud](https://www.figma.com/file/8rXGl68NoEmAhHpcV7aB5o/Grocery-bud?node-id=0%3A1&t=IMjjwDExGWpXdpQL-1)
