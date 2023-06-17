@@ -72,14 +72,42 @@ const App = () => {
     setLocalState(newItems);
   }
 
+  function clearList() {
+    setItems([]);
+    setLocalState([]);
+  }
+
   return (
     <main className='section-center'>
+      <h4 className='title'>Grocery Bud</h4>
+      <div className='title-underline'></div>
       {/* Displays form component responsible for adding new items to the grocery
       list */}
-      <Form addNewItem={addNewItem} />
-      {/* Displays ItemsColumn responsible for showing all items from the grocery list - each as a row */}
-      <ItemsColumn items={items} removeItem={removeItem} editItem={editItem} />
-      {/* Responsible for showing Toast messages when toast.success/error is selected */}
+      <div style={{ marginTop: '20px' }}>
+        <Form addNewItem={addNewItem} />
+        {/* Displays ItemsColumn responsible for showing all items from the grocery list - each as a row */}
+        <ItemsColumn
+          items={items}
+          removeItem={removeItem}
+          editItem={editItem}
+        />
+        {/* button to clear all items from list -- only displayed if there are any
+      items in the list */}
+        {items.length > 0 && (
+          <button
+            style={{
+              marginTop: '30px',
+              width: '100%',
+            }}
+            type='button'
+            className='btn '
+            onClick={clearList}
+          >
+            Clear All
+          </button>
+        )}
+        {/* Responsible for showing Toast messages when toast.success/error is selected */}
+      </div>
       <ToastContainer />
     </main>
   );
