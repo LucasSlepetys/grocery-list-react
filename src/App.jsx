@@ -1,4 +1,4 @@
-import { Form, ItemsColumn } from './components/index';
+import { Form, ItemsColumn } from './groceryComponent/index';
 import { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { nanoid } from 'nanoid';
