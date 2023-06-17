@@ -12,8 +12,6 @@ import { nanoid } from 'nanoid';
 //     list = [];
 //   }
 
-//   const defaultList = JSON.parse(localStorage.get('list') || '[]');
-
 //   return defaultList;
 // };
 
